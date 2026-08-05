@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Survey Application</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Online Survey Application</h1>
+    <p>Answer any 5 random questions</p>
+</header>
+
+<div class="container">
+
+    <div id="surveyBox">
+
+        <h2>Survey Questions</h2>
+
+        <form id="surveyForm">
+
+            <div id="questionsContainer">
+
+            </div>
+
+            <button type="submit">
+                Submit Survey
+            </button>
+
+        </form>
+
+    </div>
+
+    <div id="resultBox" style="display:none;">
+
+        <h2>Thank You!</h2>
+
+        <p>Your responses have been submitted successfully.</p>
+
+        <div id="answers"></div>
+
+        <button onclick="location.reload()">
+            Take Survey Again
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
