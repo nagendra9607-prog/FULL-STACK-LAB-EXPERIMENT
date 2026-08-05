@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+
+<body>
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+  <div class="logo">
+    <img src="images/company-logo.png" alt="Company Logo">
+    <h2>ABC Technologies</h2>
+</div>
+    <ul>
+
+        <li><i class="fa-solid fa-house"></i> Dashboard</li>
+
+        <li><i class="fa-solid fa-calendar-check"></i> Apply Leave</li>
+
+        <li><i class="fa-solid fa-clock-rotate-left"></i> Leave History</li>
+
+        <li><i class="fa-solid fa-chart-column"></i> Reports</li>
+
+        <li><i class="fa-solid fa-user"></i> Profile</li>
+
+        <li><i class="fa-solid fa-right-from-bracket"></i> Logout</li>
+
+    </ul>
+
+</div>
+
+<!-- Main Content -->
+
+<div class="main">
+
+    <!-- Header -->
+
+    <header>
+
+        <div>
+
+            <h1>Leave Management System</h1>
+
+            <p id="date"></p>
+
+        </div>
+
+        <button onclick="darkMode()">
+
+            <i class="fa-solid fa-moon"></i>
+
+            Dark Mode
+
+        </button>
+
+    </header>
+
+    <!-- Profile -->
+
+    <div class="profile-card">
+
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Employee">
+
+        <div>
+
+            <h2>Nagendra</h2>
+
+            <p>Employee ID : EMP101</p>
+
+            <p>Department : Web Development</p>
+
+        </div>
+
+    </div>
+
+    <!-- Dashboard Cards -->
+
+    <div class="cards">
+
+        <div class="card">
+
+            <i class="fa-solid fa-plane-departure"></i>
+
+            <h2>12</h2>
+
+            <p>Casual Leave</p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-user-doctor"></i>
+
+            <h2>8</h2>
+
+            <p>Medical Leave</p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-calendar-days"></i>
+
+            <h2>20</h2>
+
+            <p>Total Leave</p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-circle-check"></i>
+
+            <h2>15</h2>
+
+            <p>Approved</p>
+
+        </div>
+
+    </div>
+        <!-- Apply Leave Form -->
+
+    <div class="form-box">
+
+        <h2>Apply Leave</h2>
+
+        <input type="text" id="search" placeholder="🔍 Search Leave Type">
+
+        <button onclick="searchLeave()" class="search-btn">
+            Search
+        </button>
+
+        <form>
+
+            <div class="row">
+
+                <div class="input-box">
+                    <label>Employee Name</label>
+                    <input type="text" placeholder="Enter Employee Name">
+                </div>
+
+                <div class="input-box">
+                    <label>Employee ID</label>
+                    <input type="text" placeholder="EMP101">
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="input-box">
+                    <label>Leave Type</label>
+
+                    <select>
+
+                        <option>Casual Leave</option>
+
+                        <option>Medical Leave</option>
+
+                        <option>Emergency Leave</option>
+
+                        <option>Earned Leave</option>
+
+                    </select>
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>Reason</label>
+
+                    <input type="text" placeholder="Enter Leave Reason">
+
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="input-box">
+
+                    <label>From Date</label>
+
+                    <input type="date">
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>To Date</label>
+
+                    <input type="date">
+
+                </div>
+
+            </div>
+
+            <label>Description</label>
+
+            <textarea rows="5"
+                placeholder="Enter Leave Description"></textarea>
+
+            <div class="btn-group">
+
+                <button type="button"
+                    onclick="submitLeave()">
+                    Submit
+                </button>
+
+                <button type="reset">
+                    Reset
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+        <!-- Leave History -->
+
+    <div class="history">
+
+        <h2>Leave History</h2>
+
+        <table>
+
+            <tr>
+                <th>Employee</th>
+                <th>Leave Type</th>
+                <th>From</th>
+                <th>To</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>Nagendra</td>
+                <td>Casual Leave</td>
+                <td>01-08-2026</td>
+                <td>02-08-2026</td>
+                <td><span class="approved">Approved</span></td>
+            </tr>
+
+            <tr>
+                <td>Nagendra</td>
+                <td>Medical Leave</td>
+                <td>10-08-2026</td>
+                <td>12-08-2026</td>
+                <td><span class="pending">Pending</span></td>
+            </tr>
+
+            <tr>
+                <td>Nagendra</td>
+                <td>Emergency Leave</td>
+                <td>18-08-2026</td>
+                <td>18-08-2026</td>
+                <td><span class="rejected">Rejected</span></td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <!-- Leave Progress -->
+
+    <div class="progress-box">
+
+        <h2>Leave Balance</h2>
+
+        <p>Casual Leave (12/20)</p>
+        <progress value="12" max="20"></progress>
+
+        <br><br>
+
+        <p>Medical Leave (8/20)</p>
+        <progress value="8" max="20"></progress>
+
+        <br><br>
+
+        <p>Emergency Leave (5/10)</p>
+        <progress value="5" max="10"></progress>
+
+    </div>
+
+    <!-- Download -->
+
+    <div class="download">
+
+        <button onclick="printSlip()">
+
+            <i class="fa-solid fa-download"></i>
+
+            Download Leave Slip
+
+        </button>
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>© 2026 Leave Management System | Developed by Nagendra</p>
+
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
