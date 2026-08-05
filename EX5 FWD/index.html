@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QuickMart - Buy & Sell Anything</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+
+<!-- ========================= -->
+<!-- HEADER START -->
+<!-- ========================= -->
+
+<header>
+
+<div class="top-bar">
+
+<div class="logo">
+<i class="fa-solid fa-store"></i>
+<h2>QuickMart</h2>
+</div>
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search products, cars, mobiles...">
+
+<button id="searchBtn">
+<i class="fa-solid fa-magnifying-glass"></i>
+</button>
+
+</div>
+
+<div class="nav-buttons">
+
+<button id="loginBtn">
+<i class="fa-solid fa-user"></i>
+Login
+</button>
+
+<button id="wishlistBtn">
+<i class="fa-solid fa-heart"></i>
+Wishlist
+</button>
+
+<button id="darkModeBtn">
+<i class="fa-solid fa-moon"></i>
+</button>
+
+</div>
+
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+
+<li><a href="#categories">
+Categories
+</a></li>
+
+<li><a href="#products">
+Products
+</a></li>
+
+<li><a href="#sell">
+Sell
+</a></li>
+
+<li><a href="#contact">
+Contact
+</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<!-- ========================= -->
+<!-- HERO SECTION -->
+<!-- ========================= -->
+
+<section class="hero">
+
+<div class="overlay">
+
+<div class="hero-content">
+
+<h1>
+Buy & Sell Anything
+Near You
+</h1>
+
+<p>
+
+Find thousands of products
+from trusted sellers.
+
+</p>
+
+<div class="hero-search">
+
+<input
+type="text"
+placeholder="What are you looking for?">
+
+<button>
+
+<i class="fa-solid fa-search"></i>
+
+Search
+
+</button>
+
+</div>
+
+<div class="hero-buttons">
+
+<button class="primary-btn">
+
+Browse Products
+
+</button>
+
+<button class="secondary-btn">
+
+Sell Now
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- CATEGORY SECTION -->
+<!-- ========================= -->
+
+<section
+class="categories"
+id="categories">
+
+<h2>
+
+Browse Categories
+
+</h2>
+
+<div class="category-container">
+
+<div class="category-card">
+
+<img src="https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg" alt="Mobile">
+
+
+<h3>Mobiles</h3>
+
+<p>
+1200+ Ads
+</p>
+
+</div>
+
+<div class="category-card">
+
+<img src="https://images.pexels.com/photos/18105/pexels-photo.jpg" alt="Laptop">
+
+
+<h3>Laptops</h3>
+
+<p>
+
+850+ Ads
+
+</p>
+
+</div>
+
+<div class="category-card">
+
+<img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg" alt="Car">
+
+<h3>Cars</h3>
+
+<p>
+
+950+ Ads
+
+</p>
+
+</div>
+        <!-- Furniture -->
+        <div class="category-card">
+<img src="https://images.pexels.com/photos/276583/pexels-photo-276583.jpeg" alt="Furniture">
+
+
+            <h3>Furniture</h3>
+
+            <p>640+ Ads</p>
+
+        </div>
+
+        <!-- Bikes -->
+        <div class="category-card">
+
+<img src="https://images.pexels.com/photos/163210/motorcycles-race-helmets-pilots-163210.jpeg" alt="Royal Enfield Continental GT 650">
+            <h3>Bikes</h3>
+
+            <p>780+ Ads</p>
+
+        </div>
+
+        <!-- Houses -->
+        <div class="category-card">
+
+<img src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg" alt="House">
+
+            <h3>Properties</h3>
+
+            <p>410+ Ads</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- FEATURED PRODUCTS -->
+<!-- ========================= -->
+
+<section class="products" id="products">
+
+    <h2>Featured Products</h2>
+
+    <div class="product-container">
+
+        <!-- Product 1 -->
+
+        <div class="product-card">
+
+<img src="https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg" alt="iPhone">
+
+            <div class="product-info">
+
+                <h3>iPhone 15 Pro</h3>
+
+                <h4>₹95,000</h4>
+
+                <p>Like New • Chennai</p>
+
+                <button class="view-btn">
+
+                    View Details
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Product 2 -->
+
+        <div class="product-card">
+<img src="https://images.pexels.com/photos/18105/pexels-photo.jpg" alt="MacBook">
+            <div class="product-info">
+
+                <h3>MacBook Air M3</h3>
+
+                <h4>₹89,999</h4>
+
+                <p>Excellent Condition</p>
+
+                <button class="view-btn">
+
+                    View Details
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Product 3 -->
+
+        <div class="product-card">
+
+<img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg" alt="Car">
+
+            <div class="product-info">
+
+                <h3>Hyundai Creta</h3>
+
+                <h4>₹8,20,000</h4>
+
+                <p>2022 Model</p>
+
+                <button class="view-btn">
+
+                    View Details
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Product 4 -->
+
+        <div class="product-card">
+<img src="https://images.pexels.com/photos/163210/motorcycles-race-helmets-pilots-163210.jpeg" alt="Royal Enfield Continental GT 650">
+
+            <div class="product-info">
+
+                <h3>Royal Enfield</h3>
+
+                <h4>₹1,45,000</h4>
+
+                <p>Classic 350</p>
+
+                <button class="view-btn">
+
+                    View Details
+
+                </button>
+
+            </div>
+
+        </div>
+                <!-- Product 5 -->
+        <div class="product-card">
+
+<img src="https://images.pexels.com/photos/276583/pexels-photo-276583.jpeg" alt="Sofa">
+
+            <div class="product-info">
+
+                <h3>Luxury Sofa Set</h3>
+
+                <h4>₹18,500</h4>
+
+                <p>3+2 Seater</p>
+
+                <button class="view-btn">
+                    View Details
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card">
+
+<img src="https://images.pexels.com/photos/1201996/pexels-photo-1201996.jpeg" alt="TV">
+
+            <div class="product-info">
+
+                <h3>Samsung 55" Smart TV</h3>
+
+                <h4>₹42,000</h4>
+
+                <p>4K UHD</p>
+
+                <button class="view-btn">
+                    View Details
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product-card">
+<img src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg" alt="Watch">
+
+
+            <div class="product-info">
+
+                <h3>Apple Watch</h3>
+
+                <h4>₹22,000</h4>
+
+                <p>Series 9</p>
+
+                <button class="view-btn">
+                    View Details
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product-card">
+
+<img src="https://images.pexels.com/photos/51383/photo-camera-subject-photographer-51383.jpeg" alt="Camera">
+            <div class="product-info">
+
+                <h3>Canon DSLR</h3>
+
+                <h4>₹58,000</h4>
+
+                <p>EOS 1500D</p>
+
+                <button class="view-btn">
+                    View Details
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- ADD LISTING -->
+<!-- ========================= -->
+
+<section class="sell-section" id="sell">
+
+    <h2>Sell Your Product</h2>
+
+    <form id="sellForm">
+
+        <input
+            type="text"
+            placeholder="Product Name"
+            required>
+
+        <input
+            type="number"
+            placeholder="Price"
+            required>
+
+        <input
+            type="text"
+            placeholder="Location"
+            required>
+
+        <textarea
+            rows="5"
+            placeholder="Description">
+        </textarea>
+
+        <button type="submit">
+
+            Post Ad
+
+        </button>
+
+    </form>
+
+</section>
+
+<!-- ========================= -->
+<!-- LOGIN MODAL -->
+<!-- ========================= -->
+
+<div class="modal" id="loginModal">
+
+    <div class="modal-content">
+
+        <span class="close">&times;</span>
+
+        <h2>Login</h2>
+
+        <input
+            type="email"
+            placeholder="Email">
+
+        <input
+            type="password"
+            placeholder="Password">
+
+        <button id="loginSubmit">
+
+            Login
+
+        </button>
+
+        <p>
+
+            Don't have an account?
+
+            <a href="#">
+
+                Register
+
+            </a>
+
+        </p>
+
+    </div>
+
+</div>
+
+<!-- ========================= -->
+<!-- PRODUCT DETAILS MODAL -->
+<!-- ========================= -->
+
+<div class="modal" id="productModal">
+
+    <div class="modal-content">
+
+        <span class="product-close">&times;</span>
+
+        <img
+            src="images/iphone.jpg"
+            id="modalImage"
+            alt="Product">
+
+        <h2 id="modalTitle">
+
+            Product Name
+
+        </h2>
+
+        <h3 id="modalPrice">
+
+            ₹0
+
+        </h3>
+
+        <p id="modalDescription">
+
+            Product Description
+
+        </p>
+
+        <button class="contact-btn">
+
+            Contact Seller
+
+        </button>
+
+    </div>
+
+</div>
+<!-- ========================= -->
+<!-- TOAST NOTIFICATION -->
+<!-- ========================= -->
+
+<div id="toast" class="toast">
+    Action completed successfully!
+</div>
+
+<!-- ========================= -->
+<!-- NEWSLETTER -->
+<!-- ========================= -->
+
+<section class="newsletter">
+
+    <div class="newsletter-content">
+
+        <h2>Stay Updated</h2>
+
+        <p>
+            Subscribe to receive latest ads and offers.
+        </p>
+
+        <form id="newsletterForm">
+
+            <input
+                type="email"
+                placeholder="Enter your email"
+                required>
+
+            <button type="submit">
+
+                Subscribe
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
+
+<footer id="contact">
+
+    <div class="footer-container">
+
+        <div class="footer-box">
+
+            <h3>QuickMart</h3>
+
+            <p>
+
+                Buy and Sell anything
+                quickly and safely.
+
+            </p>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="#">Home</a></li>
+
+                <li><a href="#">Products</a></li>
+
+                <li><a href="#">Categories</a></li>
+
+                <li><a href="#">Sell</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Support</h3>
+
+            <ul>
+
+                <li><a href="#">Help Center</a></li>
+
+                <li><a href="#">Privacy Policy</a></li>
+
+                <li><a href="#">Terms</a></li>
+
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Follow Us</h3>
+
+            <div class="social-icons">
+
+                <a href="#">
+                    <i class="fab fa-facebook"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-youtube"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="copyright">
+
+        <p>
+
+            © 2026 QuickMart.
+            All Rights Reserved.
+
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- ========================= -->
+<!-- LOADER -->
+<!-- ========================= -->
+
+<div id="loader">
+
+    <div class="spinner"></div>
+
+</div>
+
+<!-- ========================= -->
+<!-- JAVASCRIPT -->
+<!-- ========================= -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
